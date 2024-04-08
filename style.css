@@ -16,6 +16,60 @@
   font-display: swap;
 }
 
+:root {
+  /* colors */
+  --clr-primary-cyan: hsl(158, 36%, 37%);
+  --clr-neutral-cream: hsl(30, 38%, 92%);
+  --clr-dark-blue: hsl(212, 21%, 14%);
+  --clr-dark-gray-blue: hsl(228, 12%, 48%);
+  --clr-white: hsl(0, 0%, 100%);
+  /* typography */
+  --ff-s: Fraunces, serif;
+  --ff-ss: Montserrat, sans-serif;
+  --fw-r: 500;
+  --fw-b: 700;
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.8125rem;
+  --fs-md: 0.875rem;
+  --fs-lg: 2rem;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: Montserrat;
+  min-height: 100svh;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-neutral-cream);
+}
+
+h1,
+h2, 
+h3 {
+  line-height: 1.1;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
 }
