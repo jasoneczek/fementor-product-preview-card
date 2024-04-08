@@ -73,3 +73,24 @@ button {
   font-family: inherit;
   font-size: inherit;
 }
+
+.product-card {
+  max-width: 37.5rem;
+  background-color: var(--clr-white);
+  margin: 0 1rem;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  font-family: var(--ff-ss);
+  font-weight: var(--fw-r);
+  font-size: var(--fs-md);
+}
+
+.d-grid {
+  display: grid;
+}
+
+@media (min-width: 48rem) {
+  .d-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
