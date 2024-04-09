@@ -92,6 +92,7 @@ button {
   font-weight: var(--fw-r);
   font-size: var(--fs-md);
   margin-bottom: 1rem;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
 }
 
 .d-grid {
@@ -159,7 +160,8 @@ button {
   transition: background-color 0.3s ease-in-out;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: var(--clr-primary-hover);
 }
 
